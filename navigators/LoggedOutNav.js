@@ -11,21 +11,20 @@ export default function LoggedOutNav(){
     return (
         <Stack.Navigator
             screenOptions={{
-            headerBackTitleVisible: false,
-        }}>
-            <Stack.Screen name="Welcome" component={Welcome} options={{
-                headerShown: false,
-            }}  />
-            <Stack.Screen name="LogIn" component={LogIn}/>
-            <Stack.Screen options={{
+                headerBackTitleVisible: false,
                 headerTransparent: true,
                 headerTitleStyle: {
                     color: "transparent"
                 },
                 headerTintColor: "black",
                 
-            }}
-                name="CreateAccount" component={CreateAccount} />
+            
+        }}>
+            <Stack.Screen name="Welcome" component={Welcome} options={{
+                headerShown: false,
+            }}  />
+            <Stack.Screen name="LogIn" component={LogIn}/>
+            <Stack.Screen name="CreateAccount" component={CreateAccount} />
         </Stack.Navigator>
     );
 }
